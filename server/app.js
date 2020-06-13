@@ -47,6 +47,7 @@ app.get("/", function(req,res){
 });
 
 app.use("/auth",Routes.auth);
+app.use("/",Routes.main);
 
 
 const PORT=process.env.PORT || 8000;
