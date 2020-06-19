@@ -12,7 +12,9 @@ const trackingSchema = new mongoose.Schema({
     user:{
         type:mongoose.Schema.Types.ObjectId,
         ref:"User"
-    }
+    },
+    lastSeenPrice:Number,
+    lastSeenTimestamp:Date
 });
 
 module.exports=mongoose.model("tracker",trackingSchema);

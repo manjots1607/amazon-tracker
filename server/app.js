@@ -15,6 +15,8 @@ const app= express();
 const dotenv = require('dotenv');
 dotenv.config();
 
+//REQUIRING LOGIC FILE
+require("./mainLogic");
 
 // Session setup
 app.use(session({
