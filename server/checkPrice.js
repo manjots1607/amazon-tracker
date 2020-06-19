@@ -1,5 +1,6 @@
-const nightmare = require('nightmare')();
+const Nightmare = require('nightmare');
 const checkPrice =async function (url){
+    const nightmare=Nightmare();
     try{
     const priceString = await nightmare.goto(url)
                                        .wait("#priceblock_ourprice")
